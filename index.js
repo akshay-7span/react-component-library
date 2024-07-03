@@ -1,2 +1,3 @@
 import TextFields from "./src/TextFields";
-export { TextFields };
+import OTPTextField from "./src/OTPTextField";
+export { TextFields, OTPTextField };
