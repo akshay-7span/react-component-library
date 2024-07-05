@@ -15,12 +15,20 @@ A customizable sidebar component for React applications, built with MUI.
 Install the package via npm:
 
 ```bash
+<<<<<<< HEAD
 npm install @7span/phoenix-react-ui-sidebar
+=======
+npm install @7span/phoenix-react-sidebarbar
+>>>>>>> 285edab (VS-230 Publish Sidebar component in npm library)
 ```
 
 Or via yarn:
 ```bash
+<<<<<<< HEAD
 yarn add @7span/phoenix-react-ui-sidebar
+=======
+yarn add @7span/phoenix-react-sidebarbar
+>>>>>>> 285edab (VS-230 Publish Sidebar component in npm library)
 ```
 
 ## Usage
@@ -28,7 +36,11 @@ Here's a basic example of how to use the custom Sidebar component in your React 
 
 ```
 import React from "react";
+<<<<<<< HEAD
 import Sidebar from "@7span/phoenix-react-ui-sidebar";
+=======
+import Sidebar from "@7span/phoenix-react-sidebarbar";
+>>>>>>> 285edab (VS-230 Publish Sidebar component in npm library)
 import { BrowserRouter as Router } from "react-router-dom";
 
 const menuItems = [
@@ -127,6 +139,7 @@ You can customize the Side by passing additional props or overriding the default
 
 ```
 
+<<<<<<< HEAD
 ## Images
 |Sidebar Open | Sidebar collapse|
 |:-:|:-:|
@@ -136,6 +149,8 @@ You can customize the Side by passing additional props or overriding the default
 ## Author
 - Jenish Dadhania
 
+=======
+>>>>>>> 285edab (VS-230 Publish Sidebar component in npm library)
 ## Contributing
 If you would like to contribute to the project, please follow these steps:
 1. Fork the repository
@@ -147,7 +162,11 @@ If you would like to contribute to the project, please follow these steps:
 
 
 ## License
+<<<<<<< HEAD
 This project is licensed under the MIT License
+=======
+This project is licensed under the MIT License - see the LICENSE file for details.
+>>>>>>> 285edab (VS-230 Publish Sidebar component in npm library)
 
 ## Contact
 If you have any questions or suggestions, feel free to open an issue or contact me directly at [yo@7span.com].
@@ -155,4 +174,7 @@ If you have any questions or suggestions, feel free to open an issue or contact 
 
 Made with by 7span
 ##### This `README.md` file provides comprehensive details about the Sidebar component, including installation instructions, usage examples, prop descriptions, customization options, and the actual component code. Let me know if you need any more adjustments!
+<<<<<<< HEAD
 
+=======
+>>>>>>> 285edab (VS-230 Publish Sidebar component in npm library)
