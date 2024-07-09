@@ -1,2 +1,3 @@
 import TextFields from "./src/TextFields";
-export { TextFields };
+import CustomizableModal from "./src/CustomizableModal";
+export { TextFields, CustomizableModal };
