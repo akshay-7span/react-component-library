@@ -1,2 +1,3 @@
 import TextFields from "./src/TextFields";
-export { TextFields };
+import Button from "./src/Button";
+export { TextFields, Button };
