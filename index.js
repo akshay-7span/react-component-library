@@ -1,2 +1,3 @@
 import TextFields from "./src/TextFields";
-export { TextFields };
+import ProfileMenuItem from "./src/ProfileMenuItem";
+export { TextFields, ProfileMenuItem };
