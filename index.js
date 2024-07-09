@@ -1,2 +1,3 @@
 import TextFields from "./src/TextFields";
-export { TextFields };
+import Dropdown from "./src/Dropdown";
+export { TextFields, Dropdown };
