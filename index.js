@@ -1,2 +1,3 @@
 import TextFields from "./src/TextFields";
-export { TextFields };
+import TabBar from "./src/TabBar";
+export { TextFields ,TabBar};
