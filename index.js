@@ -1,2 +1,3 @@
 import TextFields from "./src/TextFields";
-export { TextFields };
+import Loader from "./src/Loader";
+export { TextFields, Loader };
