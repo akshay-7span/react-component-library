@@ -1,7 +1,7 @@
 {
-  "name": "@7span/phoenix-react-ui-actionitems",
-  "version": "1.0.0",
-  "description": "A customizable ActionItems component for React applications, built with MUI.",
+  "name": "@7span/phoenix-react-ui-header",
+  "version": "1.0.1",
+  "description": "A customizable header component for React applications, built with MUI.",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -10,7 +10,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["Action Menu","Action Item", "mui", "react", "phoenix","phoenix-react","phoenix-react-ui","7span"],
+  "keywords": [],
   "author": "7span",
   "license": "MIT",
   "dependencies": {
