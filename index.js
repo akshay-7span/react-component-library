@@ -1,2 +1,3 @@
 import TextFields from "./src/TextFields";
-export { TextFields };
+import Header from "./src/Header";
+export { TextFields, Header };
