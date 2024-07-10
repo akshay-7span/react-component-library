@@ -1,6 +1,6 @@
-# Custom Sidebar Component
+# Custom ProfileMenuItem Component
 
-A customizable button component for React applications, built with MUI.
+A customizable ProfileMenuItem component for React applications, built with MUI.
 
 ## Features
 
