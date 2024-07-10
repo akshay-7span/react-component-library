@@ -1,11 +1,8 @@
 {
-  "name": "7spanuilab",
+  "name": "7spanuilab-tab-bar",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "build": "babel src --out-dir lib --copy-files"
-  },
   "repository": {
     "type": "git",
     "url": ""
@@ -13,12 +10,6 @@
   "keywords": [],
   "author": "7span",
   "license": "Apache",
-  "devDependencies": {
-    "@babel/cli": "^7.24.7",
-    "@babel/core": "^7.24.7",
-    "@babel/preset-env": "^7.24.7",
-    "@babel/preset-react": "^7.24.7"
-  },
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
