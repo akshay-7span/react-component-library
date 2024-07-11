@@ -15,12 +15,12 @@ A customizable sidebar component for React applications, built with MUI.
 Install the package via npm:
 
 ```bash
-npm install @7span/phoenix-react-sidebarbar
+npm install @7span/phoenix-react-ui-sidebar
 ```
 
 Or via yarn:
 ```bash
-yarn add @7span/phoenix-react-sidebarbar
+yarn add @7span/phoenix-react-ui-sidebar
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ Here's a basic example of how to use the custom Sidebar component in your React 
 
 ```
 import React from "react";
-import Sidebar from "@7span/phoenix-react-sidebarbar";
+import Sidebar from "@7span/phoenix-react-ui-sidebar";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const menuItems = [
@@ -127,6 +127,15 @@ You can customize the Side by passing additional props or overriding the default
 
 ```
 
+## Images
+|Sidebar Open | Sidebar collapse|
+|:-:|:-:|
+|![Sidebar Image](https://github.com/akshay-7span/react-component-library/blob/VS-230/Sidebar/sidebar.png)|![Sidebar Image](https://github.com/akshay-7span/react-component-library/blob/VS-230/Sidebar/sidebar-collapse.png)
+
+
+## Author
+- Jenish Dadhania
+
 ## Contributing
 If you would like to contribute to the project, please follow these steps:
 1. Fork the repository
@@ -138,7 +147,7 @@ If you would like to contribute to the project, please follow these steps:
 
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License
 
 ## Contact
 If you have any questions or suggestions, feel free to open an issue or contact me directly at [yo@7span.com].
@@ -146,3 +155,4 @@ If you have any questions or suggestions, feel free to open an issue or contact 
 
 Made with by 7span
 ##### This `README.md` file provides comprehensive details about the Sidebar component, including installation instructions, usage examples, prop descriptions, customization options, and the actual component code. Let me know if you need any more adjustments!
+

@@ -1,6 +1,6 @@
 {
-  "name": "@7span/phoenix-react-sidebarbar",
-  "version": "1.0.0",
+  "name": "@7span/phoenix-react-ui-sidebar",
+  "version": "1.0.4",
   "description": "A customizable button component for React applications, built with MUI.",
   "main": "index.js",
   "repository": {
