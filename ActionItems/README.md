@@ -87,10 +87,9 @@ export default MyComponent;
 You can customize the styles of the ActionItems component and its elements by modifying the sx prop in the component's JSX.
 
 ## Images
-|Sidebar Open | Sidebar collapse|
-|:-:|:-:|
-|![Sidebar Image](https://github.com/akshay-7span/react-component-library/blob/VS-230/Sidebar/sidebar.png)|![Sidebar Image](https://github.com/akshay-7span/react-component-library/blob/VS-230/Sidebar/sidebar-collapse.png)
-
+| Actions Menu |
+|:-:|
+|![Action Image](https://github.com/akshay-7span/react-component-library/blob/VS-237/ActionItems/ActionItems.png)|
 
 ## Author
 - Harshil Patel
