@@ -94,8 +94,8 @@ You can customize the styles of the Header component and its elements by modifyi
 
 ## Images
 | Header Image |
-|:-:|:-:|
-|![Sidebar Image](https://github.com/akshay-7span/react-component-library/blob/VS-230/Sidebar/sidebar.png)
+|:-:|
+|![Sidebar Image](https://github.com/akshay-7span/react-component-library/blob/VS-237/Header/Header.png)
 
 
 ## Author
