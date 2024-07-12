@@ -17,10 +17,15 @@ const ActionItems = ({ anchorEl, setAnchorEl, menuItems }) => {
   if (!menuItems || !Array.isArray(menuItems) || menuItems.length === 0) {
     return null;
   }
-const lastIndex = menuItems.length - 1;
+  const lastIndex = menuItems.length - 1;
   const menuComponents = menuItems
     .map((item, index) => [
-      <MenuItem key={index} onClick={() => item.onClick || setAnchorEl(null)}>
+      <MenuItem
+        key={index}
+        onClick={() => {
+          item.onClick();
+          setAnchorEl(null);
+        }}>
         <ListItemIcon>
           {React.createElement(item.icon, {
             fontSize: "small",
@@ -41,8 +46,7 @@ const lastIndex = menuItems.length - 1;
       open={Boolean(anchorEl)}
       onClose={() => setAnchorEl(null)}
       transformOrigin={{ horizontal: "right", vertical: "top" }}
-      anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
-    >
+      anchorOrigin={{ horizontal: "right", vertical: "bottom" }}>
       {menuComponents}
     </Menu>
   );

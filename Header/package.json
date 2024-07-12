@@ -1,7 +1,7 @@
 {
   "name": "@7span/phoenix-react-ui-header",
-  "version": "1.0.0",
-  "description": "A customizable button component for React applications, built with MUI.",
+  "version": "1.0.1",
+  "description": "A customizable header component for React applications, built with MUI.",
   "main": "index.js",
   "repository": {
     "type": "git",
