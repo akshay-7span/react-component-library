@@ -1,7 +1,7 @@
 {
-  "name": "@7span/phoenix-react-ui-actionitems",
-  "version": "1.0.0",
-  "description": "A customizable ActionItems component for React applications, built with MUI.",
+  "name": "@7span/phoenix-react-ui-quizcard",
+  "version": "1.0.1",
+  "description": "A customizable quiz card component for React applications, built with MUI.",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -10,18 +10,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["Action Menu","Action Item", "mui", "react", "phoenix","phoenix-react","phoenix-react-ui","7span"],
+  "keywords": [],
   "author": "7span",
   "license": "MIT",
   "dependencies": {
-    "react": "^18.3.1",
-    "react-router": "^6.23.1",
-    "react-dom": "^18.3.1",
     "yaml": "^1.10.2",
     "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.5",
     "@mui/icons-material": "^5.15.20",
     "@mui/material": "^5.15.20",
+    "@emotion/styled": "^11.11.5",
     "react-router-dom": "^6.23.1"
   },
   "bugs": {
