@@ -117,7 +117,7 @@ export default App;
 You can customize the styles of the ActionItems component and its elements by modifying the sx prop in the component's JSX.
 
 ## Images
-|Sidebar Open|
+|Quiz Card|
 |:-:|
 |![Quiz Card Image](https://github.com/akshay-7span/react-component-library/blob/VS-238/Quiz/cover_img.png)|
 
