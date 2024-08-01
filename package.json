@@ -1,5 +1,5 @@
 {
-  "name": "phoenix-react-components",
+  "name": "@7span/phoenix-react-components",
   "version": "1.0.1",
   "description": "A customizable ActionItems, Quiz,Header,Sidebar,TabBar,ProfileMenuItem,Loader,Dropdown,CustomizableModal,Button,PasswordSuggestion,TextFields component for React applications, built with MUI.",
   "main": "index.js",
@@ -21,16 +21,18 @@
     "preview": "vite preview"
   },
   "keywords": [
-    "Action Menu",
     "Action Item",
-    "Tab bar",
-    "Tab",
-    "mui",
-    "react",
-    "phoenix",
-    "phoenix-react",
-    "phoenix-react-ui",
-    "7span"
+    "Button",
+    "Customizable Modal", 
+    "Sidebar",
+    "Tabbar",
+    "TextField",
+    "ProfileMenuItem",
+    "Loader",
+    "Quiz",
+    "Header",
+    "Dropdown",
+    "PasswordSuggestion"
   ],
   "author": "7span",
   "license": "MIT",

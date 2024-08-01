@@ -19,12 +19,12 @@ npm install @mui/material @emotion/react @emotion/styled
 Install the package via npm:
 
 ```bash
-npm install @7span/phoenix-react-ui-tabbar
+npm install @7span/phoenix-react-components
 ```
 
 Or via yarn:
 ```bash
-yarn add @7span/phoenix-react-ui-tabbar
+yarn add @7span/phoenix-react-components
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ Here's a basic example of how to use the custom Sidebar component in your React 
 
 ```
 import React, { useState } from "react";
-import TabBar from "@7span/phoenix-react-ui-tabbar";
+import TabBar from "@7span/phoenix-react-components";
 
 const App = () => {
   const [currentTab, setCurrentTab] = useState(0);

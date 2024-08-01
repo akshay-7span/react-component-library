@@ -20,12 +20,12 @@ npm install @mui/material @emotion/react @emotion/styled
 Install the package via npm:
 
 ```bash
-npm install @7span/phoenix-react-ui-actionitems
+npm install @7span/phoenix-react-components
 ```
 
 Or via yarn:
 ```bash
-yarn add @7span/phoenix-react-ui-actionitems
+yarn add @7span/phoenix-react-components
 ```
 
 ## Usage
@@ -33,7 +33,7 @@ Here's a basic example of how to use the custom Sidebar component in your React 
 
 ```
 import React, { useState } from "react";
-import ActionItems from "@7span/phoenix-react-ui-actionitems";
+import ActionItems from "@7span/phoenix-react-components";
 import { Icon1, Icon2 } from "@mui/icons-material"; // Replace with your actual icons
 
 const MyComponent = () => {

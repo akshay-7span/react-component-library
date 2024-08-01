@@ -16,12 +16,12 @@ Header is a responsive React component designed using Material-UI. It features a
 Install the package via npm:
 
 ```bash
-npm install @7span/phoenix-react-ui-header
+npm install @7span/phoenix-react-components
 ```
 
 Or via yarn:
 ```bash
-yarn add @7span/phoenix-react-ui-header
+yarn add @7span/phoenix-react-components
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ Here's a basic example of how to use the custom Sidebar component in your React 
 
 ```
 import React from 'react';
-import Header from '@7span/phoenix-react-ui-header';
+import Header from '@7span/phoenix-react-components';
 import { Avatar } from '@mui/material';
 
 const ProfileComponent = () => (

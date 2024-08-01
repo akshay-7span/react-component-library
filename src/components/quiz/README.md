@@ -21,12 +21,12 @@ npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
 Install the package via npm:
 
 ```bash
-npm install @7span/phoenix-react-ui-quizcard
+npm install @7span/phoenix-react-components
 ```
 
 Or via yarn:
 ```bash
-yarn add @7span/phoenix-react-ui-quizcard
+yarn add @7span/phoenix-react-components
 ```
 
 ## Usage
@@ -34,7 +34,7 @@ Here's a basic example of how to use the custom Sidebar component in your React 
 
 ```
 import React from "react";
-import Quiz from " @7span/phoenix-react-ui-quizcard";
+import Quiz from " @7span/phoenix-react-components";
 import MoveQuizModelComponent from "./MoveQuizModelComponent"; // Your custom move quiz modal component
 import ActionItemsComponent from "./ActionItemsComponent"; // Your custom action items component
 

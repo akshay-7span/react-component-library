@@ -14,19 +14,19 @@ A customizable ProfileMenuItem component for React applications, built with MUI.
 Install the package via npm:
 
 ```bash
-npm install 7spanuilab-profilemenuitem
+npm install @7span/phoenix-react-components
 ```
 
 Or via yarn:
 ```bash
-yarn add 7spanuilab-profilemenuitem
+yarn add @7span/phoenix-react-components
 ```
 
 ## Usage
 Here's a basic example of how to use the ProfileMenuItem component in your React application:
 
 ```
-import { ProfileMenuItem } from "7spanuilab-profilemenuitem";
+import { ProfileMenuItem } from "@7span/phoenix-react-components";
 import { React, useState } from "react";
 import { Button } from "@mui/material";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";

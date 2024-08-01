@@ -15,12 +15,12 @@ A customizable sidebar component for React applications, built with MUI.
 Install the package via npm:
 
 ```bash
-npm install @7span/phoenix-react-ui-sidebar
+npm install @7span/phoenix-react-components
 ```
 
 Or via yarn:
 ```bash
-yarn add @7span/phoenix-react-ui-sidebar
+yarn add @7span/phoenix-react-components
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ Here's a basic example of how to use the custom Sidebar component in your React 
 
 ```
 import React from "react";
-import Sidebar from "@7span/phoenix-react-ui-sidebar";
+import Sidebar from "@7span/phoenix-react-components";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const menuItems = [
