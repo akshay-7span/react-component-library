@@ -10,5 +10,10 @@ import CustomizableModal from "./src/components/customizablemodal/CustomizableMo
 import Button from "./src/components/button/Button"
 import PasswordSuggestion from "./src/components/passwordsuggestion/PasswordSuggestion";
 import TextFields from "./src/components/textfields/TextFields";
+import DataGrid from "./src/components/datagrid/DataGrid";
+import TextArea from "./src/components/textarea/TextArea";
+import Timer from "./src/components/timer/Timer"
+import InfoCard from "./src/components/infocard/InfoCard"
+import Dialog from "./src/components/dialog/Dialog"
 
-export { ActionItems, Quiz,Header,Sidebar,TabBar,ProfileMenuItem,Loader,Dropdown,CustomizableModal,Button,PasswordSuggestion,TextFields}
+export { ActionItems, Quiz,Header,Sidebar,TabBar,ProfileMenuItem,Loader,Dropdown,CustomizableModal,Button,PasswordSuggestion,TextFields,DataGrid,TextArea,Timer,InfoCard,Dialog}
