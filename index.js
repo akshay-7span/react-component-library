@@ -15,5 +15,8 @@ import TextArea from "./src/components/textarea/TextArea";
 import Timer from "./src/components/timer/Timer"
 import InfoCard from "./src/components/infocard/InfoCard"
 import Dialog from "./src/components/dialog/Dialog"
+import Switch from "./src/components/switch/Switch"
+import DatePicker from "./src/components/datepicker/DatePicker"
+import DateRangePicker from "./src/components/daterange/DateRangePicker"
 
-export { ActionItems, Quiz,Header,Sidebar,TabBar,ProfileMenuItem,Loader,Dropdown,CustomizableModal,Button,PasswordSuggestion,TextFields,DataGrid,TextArea,Timer,InfoCard,Dialog}
+export { ActionItems, Quiz,Header,Sidebar,TabBar,ProfileMenuItem,Loader,Dropdown,CustomizableModal,Button,PasswordSuggestion,TextFields,DataGrid,TextArea,Timer,InfoCard,Dialog,Switch,DatePicker,DateRangePicker}

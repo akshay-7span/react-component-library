@@ -22,10 +22,9 @@ Path to README : `src/components/component-name/README.md`
 | 15 | `Timer` | The `Timer` component is a countdown timer built with Material-UI. It displays the remaining time in a formatted HH:MM:SS format and updates every second. The component accepts a duration prop (in minutes) and a setExamTimeLeft callback to update the remaining time. It is ideal for use cases such as exams, quizzes, or any timed activities. |
 | 16 | `InfoCard` | The `InfoCard` component is a visually appealing card built with Material-UI. It displays an image, a count, and descriptive text, making it ideal for showcasing key information or statistics. The component is styled for clarity and impact, with customizable background color, padding, and border properties. The InfoCard is perfect for dashboards, summaries, and any context where highlighting information is essential.|
 | 17 | `Dialog` | The `Dialog` component is a customizable modal dialog built with Material-UI. It provides a flexible way to display content in a modal window with options for customizing width, padding, shadows, and border radius. The component includes a close button for user interaction and supports backdrop customization for enhanced visual appeal. Ideal for displaying alerts, messages, or interactive content that requires user attention. |
-
-
-
-
+| 18 | `Switch` | The `Switch` component is a customizable toggle switch built with Material-UI. It allows users to toggle between two states, such as on and off, with an optional label for clarity. The component supports customization of the switch's properties and integrates seamlessly into forms, settings, or any UI where a binary choice is required. |
+| 19 | `DatePicker` | The `DatePicker` component integrates a date picker functionality using Material-UI's X-date-pickers library. It leverages Day.js for date handling and localization. This component includes options for setting a label, handling date changes, displaying placeholder text, and providing error feedback. It features a customizable input label and helper text, making it suitable for forms, date selection, and any application requiring date input functionality. |
+| 20 | `DateRangePicker` | The `DateRangePicker` component allows users to select a date range using an intuitive popover calendar interface. This component leverages the react-date-range library for the date range picker and is styled with Material-UI components. The selected date range is displayed in a read-only text field, which can be clicked to open the date range picker. Customizable through props, it supports date formatting, initial date ranges, and more, making it suitable for forms, booking systems, and other applications requiring date range selection. |
 
 ## Installation
 
