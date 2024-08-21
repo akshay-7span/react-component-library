@@ -3,14 +3,13 @@ import { Popover } from '@mui/material'
 import { DateRange } from 'react-date-range'
 import 'react-date-range/dist/styles.css'
 import 'react-date-range/dist/theme/default.css'
-import TextField from '@/components/core/textfield2/TextField'
+import TextField from "../textfields/TextFields"
 import { useTheme } from '@mui/material/styles'
 import InputAdornment from '@mui/material/InputAdornment'
 import IconButton from '@mui/material/IconButton'
-import CalendarIcon from '~icons/material-symbols-light/calendar-month-outline-rounded'
 
 const DateRangePicker = (props) => {
-    const { onChange, ranges, ...daterangeprops } = props
+    const { onChange, ranges,icon, ...daterangeprops } = props
     const [anchorEl, setAnchorEl] = useState(null)
 
     const open = Boolean(anchorEl)
@@ -50,7 +49,7 @@ const DateRangePicker = (props) => {
                     endAdornment: (
                         <InputAdornment position="end">
                             <IconButton>
-                                <CalendarIcon />
+                                {icon}
                             </IconButton>
                         </InputAdornment>
                     )

@@ -1,6 +1,5 @@
 import IconButton from '@mui/material/IconButton'
 import MaterialDialog from '@mui/material/Dialog'
-import CloseRoundedIcon from '~icons/material-symbols-light/close-rounded'
 import { alpha, styled } from '@mui/material'
 
 const StyledDialog = styled(MaterialDialog)(({ theme }) => [
@@ -34,7 +33,7 @@ const StyledDialog = styled(MaterialDialog)(({ theme }) => [
  * @returns
  */
 const Dialog = (props) => {
-    const { onClose, ...dialogProps } = props
+    const { onClose,icon, ...dialogProps } = props
 
     return (
         <StyledDialog
@@ -60,7 +59,7 @@ const Dialog = (props) => {
                     color: 'text.primary'
                 }}
             >
-                <CloseRoundedIcon />
+                {icon}
             </IconButton>
             {props.children}
         </StyledDialog>

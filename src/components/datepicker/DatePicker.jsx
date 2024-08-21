@@ -4,8 +4,7 @@ import { DatePicker as MUIDatePicker } from '@mui/x-date-pickers/DatePicker'
 import { Stack, styled } from '@mui/material'
 import MaterialInputLabel from '@mui/material/InputLabel'
 import MaterialFormHelperText from '@mui/material/FormHelperText'
-import CalendarMonthOutlineRounded from '~icons/material-symbols-light/calendar-month-outline-rounded'
-import TextField from '../textfield2/TextField'
+import TextField from '../textfields/TextFields'
 
 const StyledInputLabel = styled(MaterialInputLabel)(({ theme }) => [
   {
@@ -37,6 +36,7 @@ function DatePicker(props) {
     rootProps,
     labelProps,
     helperTextProps,
+      icon,
     ...datePickerProps
   } = props
 
@@ -54,7 +54,7 @@ function DatePicker(props) {
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <MUIDatePicker
           slots={{
-            openPickerIcon: CalendarMonthOutlineRounded,
+            openPickerIcon: icon,
             textField: TextField
           }}
           onChange={handleDateChange}

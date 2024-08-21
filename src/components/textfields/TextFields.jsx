@@ -1,97 +1,98 @@
-import React, { useState } from "react";
-import TextField from "@mui/material/TextField";
-import IconButton from "@mui/material/IconButton";
-import InputAdornment from "@mui/material/InputAdornment";
-import Visibility from "@mui/icons-material/Visibility";
-import VisibilityOff from "@mui/icons-material/VisibilityOff";
-import PasswordSuggestion from "../passwordsuggestion/PasswordSuggestion";
-import Typography from "@mui/material/Typography";
-import Grid from "@mui/material/Grid";
-import { Link } from "react-router-dom";
+import MaterialTextField from '@mui/material/TextField'
+import MaterialInputLabel from '@mui/material/InputLabel'
+import MaterialFormHelperText from '@mui/material/FormHelperText'
+import Stack from '@mui/material/Stack'
+import { styled } from '@mui/material/styles'
 
-const TextFields = (props) => {
+const StyledTextField = styled(MaterialTextField)(
+    ({ variant = 'outlined', size = 'medium', theme }) => [
+        {
+            '.MuiInputBase-root': {
+                borderRadius: theme.spacing(0.5)
+            },
+            '.MuiInputBase-input': {
+                height: 24,
+                paddingTop: 12,
+                paddingBottom: 12
+            },
+            '.MuiInputBase-input::placeholder': {
+                color: theme.palette.grey[300],
+                opacity: 1
+            }
+        },
+        variant === 'filled' && {
+            '.MuiInputBase-input::placeholder': {
+                color: theme.palette.grey.main,
+                opacity: 1
+            }
+        },
+        size === 'small' && {
+            '.MuiInputBase-input': {
+                paddingTop: 8,
+                paddingBottom: 8
+            }
+        }
+    ]
+)
+
+const StyledInputLabel = styled(MaterialInputLabel)(({ theme }) => [
+    {
+        fontWeight: 500,
+        color: theme.palette.text.primary,
+        lineHeight: 1.2
+    }
+])
+
+const StyledHelperText = styled(MaterialFormHelperText)(({ theme }) => [
+    {
+        margin: 0,
+        fontSize: 14,
+        lineHeight: 1.2
+    }
+])
+
+/**
+ * @param {import('@mui/material').Text & {label: string}} props - TextField Props.
+ */
+/**
+ * @param {import('@mui/material').TextFieldProps & {
+ *   rootProps?: import('@mui/material').StackProps,
+ *   labelProps?: import('@mui/material').InputLabelProps,
+ *   helperTextProps?: import('@mui/material').FormHelperTextProps
+ * }} props
+ */
+const TextField = (props) => {
     const {
-        className,
-        placeholder,
-        onChange,
-        type,
-        errorMessage,
         label,
-        showError,
-        showPasswordTooltip,
-        showBottomLabel,
-        bottomLabelPath,
-        bottomLabelText,
-        passwordSuggestions,
-        ...otherProps
-    } = props;
+        error = false,
+        onChange = () => {},
+        helperText = '',
+        rootProps,
+        labelProps,
+        helperTextProps,
+        ...textfieldProps
+    } = props
 
-    const [showPassword, setShowPassword] = useState(false);
-
-    const handleClickShowPassword = () => {
-        setShowPassword(!showPassword);
-    };
+    const handleChange = (e) => {
+        onChange(e.target.value)
+    }
 
     return (
-        <Grid marginBottom={3}>
-            {label && (
-                <Typography
-                    variant="body"
-                    component="div"
-                    style={{ marginBottom: "0.5rem" }}
-                >
-                    {label}
-                    {showPasswordTooltip && passwordSuggestions && (
-                        <PasswordSuggestion suggestions={passwordSuggestions} />
-                    )}
-                </Typography>
-            )}
-            <TextField
-                className={className}
-                placeholder={placeholder}
+        <Stack gap={1} {...rootProps}>
+            {label && <StyledInputLabel {...labelProps}>{label}</StyledInputLabel>}
+            <StyledTextField
+                error={error}
                 fullWidth
-                onChange={onChange}
-                type={type === "password" ? (showPassword ? "text" : "password") : type}
-                InputProps={{
-                    endAdornment:
-                        type === "password" ? (
-                            <InputAdornment position="end">
-                                <IconButton onClick={handleClickShowPassword} edge="end">
-                                    {showPassword ? <Visibility /> : <VisibilityOff />}
-                                </IconButton>
-                            </InputAdornment>
-                        ) : null,
-                }}
-                {...otherProps}
+                onChange={handleChange}
+                {...textfieldProps}
             />
-            <Grid container justifyContent="space-between" alignItems="center">
-                <Grid item>
-                    {showError && errorMessage && (
-                        <Typography
-                            variant="body2"
-                            style={{
-                                fontSize: "14px",
-                                fontWeight: "400",
-                                color: "#EF4444",
-                                padding: "0px 4px",
-                            }}
-                        >
-                            {errorMessage}
-                        </Typography>
-                    )}
-                </Grid>
-                <Grid item>
-                    {showBottomLabel && bottomLabelPath && bottomLabelText && (
-                        <Typography
-                            variant="body2"
-                            sx={{ textAlign: "right", fontSize: "12px" }}
-                        >
-                            <Link to={bottomLabelPath}>{bottomLabelText}</Link>
-                        </Typography>
-                    )}
-                </Grid>
-            </Grid>
-        </Grid>
-    );
-};
-export default TextFields;
+            {error && helperText && (
+                <StyledHelperText error={error} {...helperTextProps}>
+                    {helperText}
+                </StyledHelperText>
+            )}
+        </Stack>
+    )
+}
+
+export default TextField
